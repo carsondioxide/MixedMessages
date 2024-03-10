@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: white;
     background-color: #16033A;
@@ -10,7 +10,45 @@ header{
 }
 
 header h1{
-    font-family: 'Bebas Neue';
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 48px;
     position: sticky;
 }
+
+#get-sign{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#whats-my-sign{
+    display: flex;
+    width: 35%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    color: #240363;
+}
+
+#whats-my-sign h2{
+    background-color: #5906F2;
+    color: white;
+    width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 4px;
+}
+
+#sign-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
