@@ -1,6 +1,16 @@
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto';
     font-size: 18px;
-    color: rgb(64, 64, 64);
-    background-color: rgb(255, 251, 248);
+    color: white;
+    background-color: #16033A;
+}
+
+header{
+    background-color: #0F0227;
+}
+
+header h1{
+    font-family: 'Bebas Neue';
+    font-size: 48px;
+    position: sticky;
 }
