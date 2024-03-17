@@ -7,8 +7,11 @@ let user_sign = "";
 
 function createRandomMessage(starSign){
 
-    const luckyNum = Math.floor(Math.random() * 100);
     const messageOptions = {
+        luckyNum : Math.floor(Math.random() * 100),
+        getLuckyNumber(){
+            return this.luckyNum;
+        },
         day: ['fortuitous', 'unlucky', 'fruitful', 'chaotic', 'unpredictable', 'challenging', 'rewarding'],
         getDay(){
             return this.day[Math.floor(Math.random() * this.day.length)];
@@ -22,6 +25,7 @@ function createRandomMessage(starSign){
             return this.aspect[Math.floor(Math.random() * this.aspect.length)];
         }
     };
+    
 
     let h2 = document.createElement('h2');
     h2.append(`${starSign}'s Daily Horoscope`);
@@ -31,7 +35,7 @@ function createRandomMessage(starSign){
     let prospects = document.createElement('li');
     prospects.append(`Future Prospects:\t\tYou will see ${messageOptions.getImprovement()} in your ${messageOptions.getAspect()}`);
     let luckyNumber = document.createElement('li');
-    luckyNumber.append(`Lucky Number:\t\tYour lucky number today is ${luckyNum}`);
+    luckyNumber.append(`Lucky Number:\t\tYour lucky number today is ${messageOptions.getLuckyNumber()}`);
 
     ul.append(dailyMessage, prospects, luckyNumber);
 
