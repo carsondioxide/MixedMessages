@@ -52,9 +52,3 @@ star_signs.forEach((Sign)=>{
     },
     {signal: controller.signal});
 });
-
-
-// TO DO:   remove the current content from view on click
-//          create a random message for the user
-//          add the message to the section with id "horoscope"
-//          change the display of the section from none to something visible
