@@ -6,7 +6,6 @@ const controller = new AbortController();
 let user_sign = "";
 
 function createRandomMessage(starSign){
-    let horoscope = document.getElementById("horoscope").innerHTML;
 
     const luckyNum = Math.floor(Math.random() * 100);
     const messageOptions = {
